@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author Landing Page — Glitter by Vladimir Djukanovic</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+    />
+  </head>
+  <body>
+    <nav class="bookui__nav">
+      <div class="bookui__container" style="display:flex;align-items:center;gap:.75rem;justify-content:space-between;">
+        <a class="bookui__brand" href="#home" style="display:flex;align-items:center;gap:.5rem;">
+          <img src="/assets/wonted-logo.png" alt="logo" style="height:28px"/>
+          <span>Wonted</span>
+        </a>
+        <button class="bookui__nav-toggle" aria-label="Toggle Menu">☰</button>
+        <div class="bookui__nav-links">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#chapters">Chapters</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#author">Author</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a class="bookui__buy-now" href="#pricing">Buy Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bookui__hero" id="home">
+      <div class="bookui__container bookui__hero-grid">
+        <div class="bookui__hero-copy">
+          <h1>There Is No Friend As Loyal As A Book</h1>
+          <p>Discover beautifully crafted stories and practical wisdom. Read a chapter free and choose your favorite format.</p>
+          <div class="bookui__cta-row">
+            <a class="btn btn--primary" href="#chapters">Read Sample</a>
+            <a class="btn btn--accent" href="#pricing">Buy Now</a>
+          </div>
+          <small>*PDF, ePub, Mobi & Kindle.</small>
+        </div>
+        <div class="bookui__hero-art">
+          <img src="/assets/hero.png" alt="Book hero" />
+        </div>
+      </div>
+    </header>
+
+    <section class="bookui__features" id="features">
+      <div class="bookui__container">
+        <h2>What you’ll achieve with the book</h2>
+        <div class="bookui__feature-grid">
+          <article class="bookui__feature"><h3>Clarity</h3><p>Simple frameworks for better thinking.</p></article>
+          <article class="bookui__feature"><h3>Habits</h3><p>Everyday routines to build momentum.</p></article>
+          <article class="bookui__feature"><h3>Focus</h3><p>Reduce distractions and do deep work.</p></article>
+          <article class="bookui__feature"><h3>Creativity</h3><p>Unlock original ideas with prompts.</p></article>
+          <article class="bookui__feature"><h3>Leadership</h3><p>Communicate clearly and lead well.</p></article>
+          <article class="bookui__feature"><h3>Results</h3><p>Ship projects you’re proud of.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__chapters" id="chapters">
+      <div class="bookui__container chapters__grid">
+        <div class="chapters__cover">
+          <img src="/assets/cover-4.jpg" alt="Inside pages"/>
+        </div>
+        <div class="chapters__list">
+          <h2>Chapters you’ll love</h2>
+          <details open>
+            <summary>1. Getting Started</summary>
+            <p>Mindset shifts and an actionable overview.</p>
+          </details>
+          <details>
+            <summary>2. Building Daily Rituals</summary>
+            <p>Design rituals that compound over time.</p>
+          </details>
+          <details>
+            <summary>3. Managing Energy</summary>
+            <p>Stay energized and avoid burnout.</p>
+          </details>
+          <details>
+            <summary>4. Delivering Work</summary>
+            <p>Ship consistently with a simple system.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__samples">
+      <div class="bookui__container">
+        <h2>Read from 4 sample files</h2>
+        <div class="samples__grid">
+          <img src="/assets/cover-1.jpg" alt="sample 1"/>
+          <img src="/assets/cover-2.jpg" alt="sample 2"/>
+          <img src="/assets/cover-3.jpg" alt="sample 3"/>
+          <img src="/assets/cover-5.jpg" alt="sample 4"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__pricing" id="pricing">
+      <div class="bookui__container">
+        <h2>Pricing (eBook and Print)</h2>
+        <div class="bookui__pricing-grid">
+          <div class="plan"><h3>eBook</h3><div class="price">$5</div><ul><li>All formats</li><li>Instant access</li></ul><a class="btn btn--primary" href="#contact">Buy</a></div>
+          <div class="plan plan--featured"><h3>Paperback</h3><div class="price">$15</div><ul><li>Signed copy</li><li>Free shipping</li></ul><a class="btn btn--accent" href="#contact">Buy</a></div>
+          <div class="plan"><h3>Bundle</h3><div class="price">$20</div><ul><li>eBook + Print</li><li>Bonus chapter</li></ul><a class="btn btn--primary" href="#contact">Buy</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__author" id="author">
+      <div class="bookui__container bookui__author-grid">
+        <img src="/assets/2.jpg" alt="Author" />
+        <div>
+          <h2>I wrote about the book as an author</h2>
+          <p>Hi, I’m the author. I write about craft, creativity, and honest work. Connect on networks below.</p>
+          <p>
+            <img src="/assets/wonted-logo (1).png" alt="signature" style="height:28px"/>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__stats">
+      <div class="bookui__container bookui__counters">
+        <div class="counter"><span data-count="35">0</span><label>Chapters</label></div>
+        <div class="counter"><span data-count="8986">0</span><label>Readers</label></div>
+        <div class="counter"><span data-count="481">0</span><label>Reviews</label></div>
+        <div class="counter"><span data-count="73">0</span><label>Awards</label></div>
+      </div>
+    </section>
+
+    <section class="bookui__gallery">
+      <div class="bookui__container">
+        <h2>Some other books by author</h2>
+        <div class="gallery__row">
+          <img src="/assets/book.png" alt="book"/>
+          <img src="/assets/book3.png" alt="book"/>
+          <img src="/assets/book5.png" alt="book"/>
+          <img src="/assets/book6.png" alt="book"/>
+          <img src="/assets/book7.png" alt="book"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__reviews" id="reviews">
+      <div class="bookui__container">
+        <h2>What people said about my books</h2>
+        <div class="bookui__reviews-slider">
+          <blockquote>
+            <p>“A thoughtful read. Highly recommended.”</p>
+            <footer><img src="/assets/user-1.png" alt="" style="height:24px;vertical-align:middle"/> — Anna</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Practical, inspiring and beautifully written.”</p>
+            <footer><img src="/assets/user-2.png" alt="" style="height:24px;vertical-align:middle"/> — Minh</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__video-banner" id="video">
+      <div class="bookui__container">
+        <div class="bookui__video-wrap">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__blog" id="blog">
+      <div class="bookui__container">
+        <h2>Latest Posts</h2>
+        <div class="blog__grid">
+          <article><img src="/assets/blog_01.jpg" alt="post"><h3>Notes on writing</h3></article>
+          <article><img src="/assets/blog_02.jpg" alt="post"><h3>Designing chapters</h3></article>
+          <article><img src="/assets/blog_03.jpg" alt="post"><h3>Publishing tips</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bookui__cta-phone">
+      <div class="bookui__container" style="text-align:center">
+        <p>The line is always open</p>
+        <h3>+61 (0) 111 222 533</h3>
+        <a class="btn btn--accent" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="bookui__contact" id="contact">
+      <div class="bookui__container">
+        <h2>Write me anything</h2>
+        <form class="bookui__contact-form" name="contact" netlify>
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="grid">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button class="btn btn--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bookui__footer">
+      <div class="bookui__container">
+        <small>© <span id="year"></span> Wonted. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"
+    integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./main.js"></script>
+</html>

@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111827;
+  background: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.6rem;
+}
+
+.btn--primary {
+  background: #eabcb2;
+  color: #111827;
+}
+
+.btn--accent {
+  background: #f97316;
+  color: #fff;
+}
+
+.bookui__container {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+}
+
+.bookui__nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffff;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0.9rem;
+}
+
+.bookui__brand {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.bookui__nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bookui__nav-links a {
+  color: #374151;
+  text-decoration: none;
+}
+
+.bookui__buy-now {
+  background: #eabcb2;
+  color: #111827;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.bookui__nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: #111827;
+  font-size: 1.3rem;
+}
+
+.bookui__hero {
+  background: #f6eeeb;
+  color: #1f2937;
+  padding: 72px 0;
+}
+
+.bookui__hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bookui__hero-copy h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.bookui__cta-row {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.bookui__hero-art img {
+  width: min(420px, 80vw);
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.bookui__features {
+  background: #fff;
+  padding: 64px 0;
+}
+
+.bookui__features h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.bookui__feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.bookui__feature {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.bookui__chapters {
+  background: #fff7f4;
+  padding: 64px 0;
+}
+
+.chapters__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.chapters__cover img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.chapters__list details {
+  background: #ffffff;
+  border: 1px solid #f1d7d0;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+}
+
+.chapters__list summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.bookui__samples {
+  background: #fff;
+  padding: 64px 0;
+}
+
+.samples__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.samples__grid img {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid #e5e7eb;
+}
+
+.bookui__pricing {
+  background: #ffffff;
+  padding: 64px 0;
+}
+
+.bookui__pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.plan {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.plan--featured {
+  border-color: #eabcb2;
+  box-shadow: 0 8px 24px rgba(234, 188, 178, 0.35);
+}
+
+.plan .price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0.5rem 0 1rem;
+}
+
+.plan ul {
+  text-align: left;
+  margin: 0 0 1rem 1.1rem;
+}
+
+.bookui__author {
+  background: #fff7f4;
+  color: #1f2937;
+  padding: 64px 0;
+}
+
+.bookui__author-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bookui__author-grid img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.bookui__stats {
+  background: #fff;
+  padding: 48px 0;
+}
+
+.bookui__counters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.counter span {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 800;
+}
+
+.counter label {
+  opacity: 0.7;
+}
+
+.bookui__gallery {
+  background: #fff7f4;
+  padding: 64px 0;
+}
+
+.gallery__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: end;
+}
+
+.gallery__row img {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid #eed0c7;
+}
+
+.bookui__reviews {
+  background: #ffffff;
+  padding: 64px 0;
+}
+
+.bookui__reviews-slider blockquote {
+  background: #f3f4f6;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+.bookui__video-banner {
+  background: url("/assets/ctav4.jpg") center/cover no-repeat;
+  padding: 72px 0;
+}
+
+.bookui__video-wrap {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.bookui__video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+
+.bookui__blog {
+  background: #fff;
+  padding: 64px 0;
+}
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.blog__grid img {
+  width: 100%;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.bookui__cta-phone {
+  background: #fff7f4;
+  padding: 48px 0;
+}
+
+.bookui__contact {
+  background: #ffffff;
+  padding: 64px 0;
+}
+
+.bookui__contact-form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.bookui__contact-form input, .bookui__contact-form textarea {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.6rem;
+  padding: 0.8rem 0.9rem;
+}
+
+.bookui__footer {
+  background: #f6eeeb;
+  color: #6b7280;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.bookui__modal {
+  max-width: min(680px, 92vw);
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .bookui__hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .bookui__feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bookui__pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .bookui__author-grid {
+    grid-template-columns: 1fr;
+  }
+  .bookui__counters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery__row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
+  .bookui__nav-toggle {
+    display: block;
+  }
+  .bookui__nav-links {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 56px;
+    background: #ffffff;
+    padding: 0.75rem 0.9rem;
+    flex-direction: column;
+  }
+  .bookui__nav-links.show {
+    display: flex;
+  }
+}
